@@ -9,7 +9,7 @@ module.exports = (server) =>{
         console.log('new Connection',socket.id)
         onlineUsers++
         console.log('Users',onlineUsers)
-
+ 
         socket.emit('usersonline',onlineUsers)
 
         //recibe el mensaje del cliente
